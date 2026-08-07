@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top 10 Fine Dining Restaurants in Ottawa — 2026 Edition</title>
+  <meta name="description" content="A curated guide to the ten best fine dining restaurants in Ottawa. From acclaimed tasting menus to elegant institutions, these are the tables where the city feels at its best." />
+  <meta name="keywords" content="top fine dining restaurants Ottawa, best fine dining Ottawa, Ottawa fine dining 2026, Atelier Ottawa, Antheia Ottawa, Riviera Ottawa, Stofa Ottawa, Beckta Ottawa, Ottawa tasting menu, Ottawa luxury dining, best restaurants Ottawa, Ottawa special occasion dining, fine dining Ottawa Canada, Ottawa restaurant guide" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Ottawa Fine Dining" />
+  <meta property="og:title" content="Top 10 Fine Dining Restaurants in Ottawa — 2026 Edition" />
+  <meta property="og:description" content="A curated guide to the ten best fine dining restaurants in Ottawa. From acclaimed tasting menus to elegant institutions, these are the tables where the city feels at its best." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.ottawafinedining.com" />
+  <meta property="og:image" content="https://www.ottawafinedining.com/ofd-atelier.jpg" />
+  <meta property="og:site_name" content="Ottawa Fine Dining" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Top 10 Fine Dining Restaurants in Ottawa — 2026 Edition" />
+  <meta name="twitter:description" content="A curated guide to the ten best fine dining restaurants in Ottawa. From acclaimed tasting menus to elegant institutions, these are the tables where the city feels at its best." />
+  <meta name="twitter:image" content="https://www.ottawafinedining.com/ofd-atelier.jpg" />
+  <link rel="canonical" href="https://www.ottawafinedining.com" />
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold: #c9a96e;
+      --gold-light: #e8d5a3;
+      --bg: #0a0a0a;
+      --surface: #111111;
+      --surface2: #181818;
+      --text: #e8e0d0;
+      --muted: #888;
+      --max: 900px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      min-height: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 24px;
+      position: relative;
+      border-bottom: 1px solid #222;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at center, #1a1208 0%, #0a0a0a 70%);
+      z-index: 0;
+    }
+
+    .hero-content { position: relative; z-index: 1; }
+
+    .hero-eyebrow {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 28px;
+    }
+
+    .hero h1 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(42px, 8vw, 80px);
+      font-weight: 300;
+      line-height: 1.05;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+
+    .hero-sub {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(16px, 3vw, 22px);
+      font-weight: 300;
+      font-style: italic;
+      color: var(--muted);
+      margin-bottom: 48px;
+    }
+
+    .hero-divider {
+      width: 60px;
+      height: 1px;
+      background: var(--gold);
+      margin: 0 auto 36px;
+    }
+
+    .hero-intro {
+      max-width: 520px;
+      font-size: 13px;
+      color: #aaa;
+      letter-spacing: 0.02em;
+      line-height: 1.9;
+    }
+
+    .scroll-hint {
+      position: absolute;
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 10px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      opacity: 0.6;
+    }
+
+    /* RESTAURANT ENTRIES */
+    .restaurant {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 560px;
+      border-bottom: 1px solid #1a1a1a;
+    }
+
+    .restaurant.reverse { direction: rtl; }
+    .restaurant.reverse > * { direction: ltr; }
+
+    .restaurant-image {
+      width: 100%;
+      height: 100%;
+      min-height: 460px;
+      object-fit: cover;
+      display: block;
+      filter: brightness(0.88);
+      transition: filter 0.4s ease;
+    }
+
+    .restaurant:hover .restaurant-image { filter: brightness(1); }
+
+    .restaurant-content {
+      background: var(--surface);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px 56px;
+    }
+
+    .restaurant-number {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+      opacity: 0.8;
+    }
+
+    .restaurant-content h2 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(32px, 4vw, 48px);
+      font-weight: 300;
+      line-height: 1.1;
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+
+    .restaurant-tagline {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 16px;
+      font-style: italic;
+      color: var(--gold);
+      margin-bottom: 24px;
+      opacity: 0.9;
+    }
+
+    .restaurant-divider {
+      width: 40px;
+      height: 1px;
+      background: var(--gold);
+      margin-bottom: 24px;
+      opacity: 0.5;
+    }
+
+    .restaurant-desc {
+      font-size: 13px;
+      color: #aaa;
+      line-height: 1.9;
+      margin-bottom: 32px;
+      max-width: 380px;
+    }
+
+    .restaurant-link {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(201, 169, 110, 0.3);
+      padding-bottom: 4px;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .restaurant-link:hover {
+      color: var(--gold-light);
+      border-color: var(--gold);
+    }
+
+    /* ALT ROWS */
+    .restaurant:nth-child(even) .restaurant-content {
+      background: var(--surface2);
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 48px 24px;
+      text-align: center;
+      border-top: 1px solid #1a1a1a;
+    }
+
+    .footer-mark {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 20px;
+      font-style: italic;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+
+    footer p {
+      font-size: 11px;
+      color: #444;
+      letter-spacing: 0.05em;
+      line-height: 2;
+    }
+
+    /* MOBILE */
+    @media (max-width: 700px) {
+      .restaurant {
+        grid-template-columns: 1fr;
+        direction: ltr !important;
+      }
+
+      .restaurant-image { min-height: 280px; }
+
+      .restaurant-content { padding: 40px 28px; }
+
+      .restaurant.reverse .restaurant-image { order: -1; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Ottawa · 2026 Edition</p>
+      <h1>Top 10 <em>Fine Dining</em><br>Restaurants in Ottawa</h1>
+      <p class="hero-sub">The tables where the city feels at its best</p>
+      <div class="hero-divider"></div>
+      <p class="hero-intro">A curated guide to Ottawa's finest restaurants — from modernist tasting menus to elegant institutions. Independently compiled. No submissions. No paid placements.</p>
+    </div>
+    <p class="scroll-hint">Scroll to explore</p>
+  </section>
+
+  <!-- 01 ATELIER -->
+  <div class="restaurant">
+    <img class="restaurant-image" src="ofd-atelier.jpg" alt="Atelier Ottawa" />
+    <div class="restaurant-content">
+      <p class="restaurant-number">No. 01</p>
+      <h2>Atelier</h2>
+      <p class="restaurant-tagline">Modernism made edible</p>
+      <div class="restaurant-divider"></div>
+      <p class="restaurant-desc">There is no menu at Atelier. No choices, no printed card — just a modernist tasting experience that changes constantly and executes at a level that would be remarkable in any city. Chef Marc Lepine's two-time Canadian Culinary Championship title and the restaurant's place on national and global lists have made it a standard-bearer for modernist dining in Canada. A dinner as art, and as theatre.</p>
+      <a class="restaurant-link" href="https://www.atelierrestaurant.ca/" target="_blank" rel="noopener">Visit Website</a>
+    </div>
+  </div>
+
+  <!-- 02 ANTHEIA -->
+  <div class="restaurant reverse">
+    <img class="restaurant-image" src="ofd-antheia.jpg" alt="Antheia Ottawa" />
+    <div class="restaurant-content">
+      <p class="restaurant-number">No. 02</p>
+      <h2>Antheia</h2>
+      <p class="restaurant-tagline">Fermentation as philosophy</p>
+      <div class="restaurant-divider"></div>
+      <p class="restaurant-desc">Chef Briana Kim's fermentation-driven chef's counter is one of the most distinctive dining experiences in Canada right now, not just Ottawa. Sixteen seats, an open kitchen, and a menu that changes with Antheia's own fermentation calendar. Intimate, considered, and building a reputation that extends well beyond the city.</p>
+      <a class="restaurant-link" href="https://www.exploretock.com/antheia" target="_blank" rel="noopener">Reserve a Table</a>
+    </div>
+  </div>
+
+  <!-- 03 RIVIERA -->
+  <div class="restaurant">
+    <img class="restaurant-image" src="ofd-riviera.jpg" alt="Riviera Ottawa" />
+    <div class="restaurant-content">
+      <p class="restaurant-number">No. 03</p>
+      <h2>Riviera</h2>
+      <p class="restaurant-tagline">Grand dining, reborn</p>
+      <div class="restaurant-divider"></div>
+      <p class="restaurant-desc">Set in a former bank on Sparks Street, Riviera is Ottawa's most dramatic dining room. Soaring ceilings, marble, and brass create a backdrop that feels both timeless and cinematic. The menu blends French technique with Canadian sensibility, offering dishes that are polished, confident, and built for the room they're served in.</p>
+      <a class="restaurant-link" href="https://dineriviera.com/" target="_blank" rel="noopener">Visit Website</a>
+    </div>
+  </div>
+
+  <!-- 04 STOFA -->
+  <div class="restaurant reverse">
+    <img class="restaurant-image" src="ofd-stofa.png" alt="Stofa Ottawa" />
+    <div class="restaurant-content">
+      <p class="restaurant-number">No. 04</p>
+      <h2>Stofa</h2>
+      <p class="restaurant-tagline">Seasonal cooking, thoughtfully composed</p>
+      <div class="restaurant-divider"></div>
+      <p class="restaurant-desc">Stofa is a study in balance: Canadian ingredients guided by global influences, plated with quiet precision. Every course feels considered — flavors layered, textures measured, and details handled with restraint. The room mirrors the cooking: modern, understated, and welcoming without excess.</p>
+      <a class="restaurant-link" href="https://www.stofarestaurant.com/" target="_blank" rel="noopener">Visit Website</a>
+    </div>
+  </div>
+
+  <!-- 05 BECKTA -->
+  <div class="restaurant">
+    <img class="restaurant-image" src="ofd-beckta.png" alt="Beckta Ottawa" />
+    <div class="restaurant-content">
+      <p class="restaurant-number">No. 05</p>
+      <h2>Beckta</h2>
+      <p class="restaurant-tagline">Ottawa's fine dining institution</p>
+      <div class="restaurant-divider"></div>
+      <p class="restaurant-desc">Beckta has long been a cornerstone of Ottawa dining — formal service, a deep cellar, and plates that lean classic more than cutting edge. It remains a fixture for those seeking the city's most established fine dining room, offering consistency, polish, and a sense of occasion that few can match.</p>
+      <a class="restaurant-link" href="https://www.beckta.com/" target="_blank" rel="noopener">Visit Website</a>
+    </div>
+  </div>
+
+  <!-- 06 COCONUT LAGOON -->
+  <div class="restaurant reverse">
+    <img class="restaurant-image" src="ofd-coconutlagoon.jpg" alt="Coconut Lagoon Ottawa" />
+    <div class="restaurant-content">
+      <p class="restaurant-number">No. 06</p>
+      <h2>Coconut Lagoon</h2>
+      <p class="restaurant-tagline">South India, elevated</p>
+      <div class="restaurant-divider"></div>
+      <p class="restaurant-desc">Chef Joe Thottungal brings the flavors of Kerala into an Ottawa fine dining setting. The menu is rooted in South Indian tradition, refined through tasting menus and elegant presentation. A restaurant that balances spice and subtlety, heritage and polish — offering something rare and essential in the capital's dining scene.</p>
+      <a class="restaurant-link" href="https://coconutlagoon.ca/" target="_blank" rel="noopener">Visit Website</a>
+    </div>
+  </div>
+
+  <!-- 07 EIGHTEEN -->
+  <div class="restaurant">
+    <img class="restaurant-image" src="ofd-eighteen.jpg" alt="E18hteen Ottawa" />
+    <div class="restaurant-content">
+      <p class="restaurant-number">No. 07</p>
+      <h2>E18hteen</h2>
+      <p class="restaurant-tagline">A Market mainstay</p>
+      <div class="restaurant-divider"></div>
+      <p class="restaurant-desc">For years, E18hteen has anchored the ByWard Market with a menu of polished steak and seafood in a striking heritage space. High ceilings, exposed stone, and formal service shape the atmosphere. The cooking leans classic, delivered with consistency and confidence — a reminder of why E18hteen continues to hold its place in Ottawa's fine dining landscape.</p>
+      <a class="restaurant-link" href="https://www.restaurant18.com/" target="_blank" rel="noopener">Visit Website</a>
+    </div>
+  </div>
+
+  <!-- 08 SOCA -->
+  <div class="restaurant reverse">
+    <img class="restaurant-image" src="ofd-soca.png" alt="Soca Ottawa" />
+    <div class="restaurant-content">
+      <p class="restaurant-number">No. 08</p>
+      <h2>Soca</h2>
+      <p class="restaurant-tagline">Latin roots, modern polish</p>
+      <div class="restaurant-divider"></div>
+      <p class="restaurant-desc">Soca brings a contemporary lens to Latin-inspired cooking, marrying bold flavors with refined presentation. The room is sleek and lively, pairing elegance with energy. A place where Ottawa's fine dining feels global, without losing its sense of intimacy and care.</p>
+      <a class="restaurant-link" href="https://www.thesocakitchen.com/" target="_blank" rel="noopener">Visit Website</a>
+    </div>
+  </div>
+
+  <!-- 09 RAPHAEL -->
+  <div class="restaurant">
+    <img class="restaurant-image" src="ofd-raphael.png" alt="Raphaël Ottawa" />
+    <div class="restaurant-content">
+      <p class="restaurant-number">No. 09</p>
+      <h2>Raphaël</h2>
+      <p class="restaurant-tagline">Peruvian elegance on Elgin</p>
+      <div class="restaurant-divider"></div>
+      <p class="restaurant-desc">Raphaël brings a refined expression of Peruvian cuisine to Elgin Street. From ceviche to carefully grilled meats, the menu highlights bold flavors through a polished, modern lens. An intimate room with thoughtful service, offering something distinctive in Ottawa's fine dining landscape.</p>
+      <a class="restaurant-link" href="https://raphaelperuviancuisine.ca/" target="_blank" rel="noopener">Visit Website</a>
+    </div>
+  </div>
+
+  <!-- 10 FAUNA -->
+  <div class="restaurant reverse">
+    <img class="restaurant-image" src="ofd-fauna.png" alt="Fauna Ottawa" />
+    <div class="restaurant-content">
+      <p class="restaurant-number">No. 10</p>
+      <h2>Fauna</h2>
+      <p class="restaurant-tagline">Inventive, rooted, alive</p>
+      <div class="restaurant-divider"></div>
+      <p class="restaurant-desc">Inventive Canadian cooking with bold flavors and a neighbourhood feel. Fauna has been one of Ottawa's most consistent and creative kitchens for years, drawing on local farms and producers to build a menu that feels both rooted and exciting. The room is warm, the cooking is confident, and the whole experience rewards those paying attention.</p>
+      <a class="restaurant-link" href="https://www.faunaottawa.ca/" target="_blank" rel="noopener">Visit Website</a>
+    </div>
+  </div>
+
+  <footer>
+    <p class="footer-mark">Ottawa Fine Dining</p>
+    <p>Curated independently. No submissions. No paid placements.</p>
+    <p>© 2026 Ottawa Fine Dining — All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
