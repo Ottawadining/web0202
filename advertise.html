@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advertise | Ottawa Fine Dining</title>
+  <meta name="description" content="Advertise with Ottawa Fine Dining. A limited number of banner placements for restaurants, hospitality businesses, and brands." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href="https://www.ottawafinedining.com/advertise.html" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold: #c9a96e;
+      --gold-light: #e8d5a3;
+      --bg: #0a0a0a;
+      --surface: #111111;
+      --text: #e8e0d0;
+      --muted: #888;
+      --max: 740px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 1.8;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* SIMPLE BRAND MARK (matches footer-mark elsewhere on the site) */
+    .brandbar {
+      text-align: center;
+      padding: 40px 24px 0;
+    }
+
+    .brandbar a {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 20px;
+      font-style: italic;
+      color: var(--gold);
+      text-decoration: none;
+    }
+
+    /* MAIN */
+    main {
+      flex: 1;
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 300;
+      font-size: clamp(28px, 5vw, 38px);
+      line-height: 1.2;
+      color: var(--text);
+      margin-bottom: 24px;
+    }
+
+    main > p {
+      font-size: 15px;
+      color: #bbb;
+      line-height: 1.9;
+      margin-bottom: 20px;
+    }
+
+    .divider {
+      width: 40px;
+      height: 1px;
+      background: var(--gold);
+      opacity: 0.4;
+      margin: 32px auto;
+    }
+
+    /* FORM */
+    #ad-form-wrap {
+      margin-top: 8px;
+    }
+
+    .form-label {
+      display: block;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-style: italic;
+      font-size: 17px;
+      color: var(--gold-light);
+      margin-bottom: 16px;
+    }
+
+    #ad-form {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      align-items: stretch;
+    }
+
+    #ad-email {
+      width: 100%;
+      background: var(--surface);
+      border: 1px solid #2a2a2a;
+      color: var(--text);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      padding: 13px 16px;
+      border-radius: 2px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    #ad-email:focus { border-color: var(--gold); }
+
+    #ad-email::placeholder { color: #555; }
+
+    #ad-email.invalid { border-color: #7a4a4a; }
+
+    .field-error {
+      font-size: 11px;
+      color: #b08282;
+      letter-spacing: 0.03em;
+      text-align: left;
+      min-height: 14px;
+      margin-top: -6px;
+    }
+
+    #ad-submit {
+      background: transparent;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      padding: 14px 20px;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    #ad-submit:hover { background: var(--gold); color: #0a0a0a; }
+
+    #ad-submit:disabled {
+      opacity: 0.5;
+      cursor: default;
+      background: transparent;
+      color: var(--gold);
+    }
+
+    .form-note {
+      font-size: 11px;
+      color: #555;
+      letter-spacing: 0.03em;
+      margin-top: 16px;
+    }
+
+    /* SUCCESS STATE */
+    #ad-success {
+      display: none;
+    }
+
+    #ad-success p:first-child {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-style: italic;
+      font-size: 22px;
+      color: var(--gold-light);
+      margin-bottom: 10px;
+    }
+
+    #ad-success p:last-child {
+      font-size: 14px;
+      color: #999;
+    }
+
+    /* FOOTER (matches rest of site) */
+    footer {
+      padding: 48px 24px;
+      text-align: center;
+      border-top: 1px solid #1a1a1a;
+    }
+
+    .footer-mark {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 20px;
+      font-style: italic;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+
+    footer p {
+      font-size: 11px;
+      color: #444;
+      letter-spacing: 0.05em;
+      line-height: 2;
+    }
+
+    .footer-advertise-link {
+      color: #666;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+
+    .footer-advertise-link:hover {
+      color: var(--gold);
+      border-bottom-color: var(--gold);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="brandbar">
+    <a href="index.html">Ottawa Fine Dining</a>
+  </div>
+
+  <main>
+    <h1>Advertise with Ottawa Fine Dining</h1>
+    <p>Reach diners actively searching for Ottawa's best restaurants, fine dining, and dining experiences.</p>
+    <p>Ottawa Fine Dining offers a limited number of banner advertising placements for restaurants, hospitality businesses, and brands looking to reach our readers.</p>
+
+    <div class="divider"></div>
+
+    <div id="ad-form-wrap">
+      <label class="form-label" for="ad-email">Interested in advertising?</label>
+      <form id="ad-form" novalidate>
+        <input
+          type="email"
+          id="ad-email"
+          name="email"
+          placeholder="Email address"
+          autocomplete="email"
+          required
+        />
+        <div class="field-error" id="ad-error"></div>
+        <button type="submit" id="ad-submit">Send me advertising information</button>
+      </form>
+      <p class="form-note">We'll send current availability, placement options and rates to your inbox.</p>
+    </div>
+
+    <div id="ad-success">
+      <p>Thank you.</p>
+      <p>Advertising information is on its way.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p class="footer-mark">Ottawa Fine Dining</p>
+    <p>Curated independently. No submissions. No paid placements.</p>
+    <p>© 2026 Ottawa Fine Dining — All Rights Reserved</p>
+  </footer>
+
+  <script>
+    (function () {
+      // ---------------------------------------------------------------
+      // FORM ENDPOINT: this must be set to a real form-backend endpoint
+      // before this page can actually deliver emails. See setup notes.
+      // Example once configured: "https://formspree.io/f/xxxxxxx"
+      // ---------------------------------------------------------------
+      var FORM_ENDPOINT = "https://formspree.io/f/xyegrbyy";
+
+      var form = document.getElementById('ad-form');
+      var emailInput = document.getElementById('ad-email');
+      var errorEl = document.getElementById('ad-error');
+      var submitBtn = document.getElementById('ad-submit');
+      var formWrap = document.getElementById('ad-form-wrap');
+      var successEl = document.getElementById('ad-success');
+
+      function isValidEmail(value) {
+        // Standard, reasonably strict email pattern
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+      }
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var value = emailInput.value.trim();
+
+        if (!isValidEmail(value)) {
+          emailInput.classList.add('invalid');
+          errorEl.textContent = 'Please enter a valid email address.';
+          return;
+        }
+
+        emailInput.classList.remove('invalid');
+        errorEl.textContent = '';
+
+        if (!FORM_ENDPOINT) {
+          // Not yet configured — fail quietly rather than pretending to succeed.
+          errorEl.textContent = 'This form is not yet connected. Please try again later.';
+          return;
+        }
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending…';
+
+        fetch(FORM_ENDPOINT, {
+          method: 'POST',
+          headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email: value })
+        })
+          .then(function (res) {
+            if (res.ok) {
+              formWrap.style.display = 'none';
+              successEl.style.display = 'block';
+            } else {
+              errorEl.textContent = 'Something went wrong. Please try again.';
+              submitBtn.disabled = false;
+              submitBtn.textContent = 'Send me advertising information';
+            }
+          })
+          .catch(function () {
+            errorEl.textContent = 'Something went wrong. Please try again.';
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Send me advertising information';
+          });
+      });
+
+      emailInput.addEventListener('input', function () {
+        emailInput.classList.remove('invalid');
+        errorEl.textContent = '';
+      });
+    })();
+  </script>
+
+</body>
+</html>
